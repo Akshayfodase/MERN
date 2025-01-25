@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometer to Meter Converter</title>
+    <style>
+        h1 {
+            color: rgb(245, 8, 8); /* Text color */
+            text-shadow: 
+                -2px -2px 0 black, /* Top-left */
+                2px -2px 0 black,  /* Top-right */
+                -2px 2px 0 black,  /* Bottom-left */
+                2px 2px 0 black;   /* Bottom-right */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="file:///C:/Users/aksha/Desktop/MERN/DAY3/images/download%20(3).jpeg"width="500" height="333">
+    <h1 style="color: red; text-align: center; font-size: 2em;"> Kilometer to Meter Converter</h1>
+    <h1 style="color: rgba(235, 22, 146, 0.432); font-family: Arial, sans-serif; line-height: 1.5;">
+        
+        <label for="kilometers">Enter kilometers:</label>
+        <input type="number" id="kilometers" name="kilometers" required>
+        <button type="button" onclick="convertToMeters()">Convert</button>
+    </form>
+    <p id="result"></p>
+    <h1 style="color: red; text-align: center; font-size: 2em;>Addition of Two Numbers</h1> <form id="additionForm"> <label for="number1">Enter first number:</label> <input type="number" id="number1" name="number1" required> <br> <label for="number2">Enter second number:</label>
+         <input type="number" id="number2" name="number2" required> <button type="button" onclick="addNumbers()">Add</button> </form> <p id="additionResult"></p>
+        
+    <h1 style="color: rgba(235, 22, 146, 0.432); font-family: Arial, sans-serif; line-height: 1.5;"></h1>
+    <script>
+        function convertToMeters() {
+            const kilometers = document.getElementById('kilometers').value;
+            const meters = kilometers * 1000;
+            document.getElementById('result').textContent = kilometers + ' Resurt' + meters + ' meters.';
+        }
+        function addNumbers() { const number1 = parseFloat(document.getElementById('number1').value); const number2 = parseFloat(document.getElementById('number2').value); const sum = number1 + number2; document.getElementById('additionResult').textContent = 'The sum of ' + number1 + ' and ' + number2 + ' is ' + sum + '.'; }
+    </script>
+</body>
+</html>

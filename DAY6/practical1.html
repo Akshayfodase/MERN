@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="heading">
+        BMI CALCULATOR
+    </div>
+
+    <div class="cont">
+        <div class="input">
+
+            <div class="input-box">
+
+                <div class="each-box">
+                    <label for="" class="label">Enter Weight</label>
+                    <input type="number" class="user-input" name="" placeholder="kg" onchange="get()" id="weight">
+                </div>
+
+                <div class="each-box">
+                    <label for="" class="label">Enter Height</label>
+                    <input type="number" class="user-input" name="" placeholder="cm" onchange="get()" id="height">
+                </div>
+
+                <p>
+                    <input type="button" id="btn" value="Go" onclick="calculate()">
+                    <input type="button" id="btn-clr" value="Clear" onclick="clr()">
+                </p>
+            
+
+            </div>
+        </div>
+
+        <div class="output">
+
+            <img src="C:\Users\aksha\Desktop\MERN\DAY6\image" alt="">
+
+        </div>
+    </div>
+
+    <p class="p">Result</p>
+
+    <div class="con2">
+        <div class="img-div" id="img1" >
+            <img id="realimg" src="" width="200" alt="">
+        </div>
+        <div class="info-div">
+            <div class="block">
+
+                <label for="">BMI: </label>
+                <label for="" id="bmicount" class="bmi-output bgc"></label><br>
+            </div>
+
+            <div class="block">
+
+                <label for="">BMI Health: </label>
+                <label id="health" class="bgc" for=""></label>
+            </div>
+        </div>
+    </div>
+    <p class="footer">Akshay Fodase</p>
+
+    <script src="practical1.js"></script>
+</body>
+
+</html>
